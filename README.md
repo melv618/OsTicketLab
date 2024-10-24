@@ -1,5 +1,3 @@
-# OsTicketLab
-
 ![image](https://github.com/user-attachments/assets/11629eb8-20a3-46b2-81e7-770f03c61325)
 
 <h1>Implementing a Help Desk Ticketing System (osTicket) in a Windows Local Webserver</h1>
@@ -46,3 +44,24 @@
     Follow the prompts to install the guest additions, then reboot your VM.
 
 ---
+
+## Enabling IIS
+
+### Now, let’s set up Internet Information Services (IIS), which is Microsoft’s web server:
+
+Open the Control Panel, type “Turn Windows features on or off,” and select it.
+![Screenshot from 2024-10-24 14-11-52](https://github.com/user-attachments/assets/acc0c854-6cf5-4a3d-b3be-f8e28da54508)
+
+
+Check Internet Information Services and make sure the following are selected:
+- World Wide Web Services
+![Screenshot from 2024-10-24 14-13-44](https://github.com/user-attachments/assets/cbfec0ae-90f4-4de1-b860-47b891be7616)
+
+- Application Development Features (enable CGI)
+![Screenshot from 2024-10-24 14-13-52](https://github.com/user-attachments/assets/e2a4f7ed-efce-4b56-a776-6c3a438a933f)
+
+- Management Tools (IIS Management Console)
+![Screenshot from 2024-10-24 14-14-04](https://github.com/user-attachments/assets/b595a386-efd2-4094-86cf-9b3671374750)
+
+
+### Click “OK” to install IIS.
